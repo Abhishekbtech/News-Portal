@@ -39,7 +39,7 @@ This application is designed to fetch and display news articles from a public AP
 
 1. Clone the repository:
     ```sh
-        git clone https://github.com/Abhishekbtech/To-Do.git
+        git clone https://github.com/Abhishekbtech/News-Portal.git
         cd news-portal
     ```
 2. Install dependencies:

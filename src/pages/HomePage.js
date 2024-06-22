@@ -19,7 +19,7 @@ const HomePage = () => {
     return (
         <div className="home-page">
             <SearchBar />
-            <button><Link to={'/favorites'}>Your Favorite News</Link></button>
+            <button style={{padding:10, marginLeft:60, margin:10}}><Link to={'/favorites'}>Your Favorite News</Link></button>
             <CategoryFilter />
             {status === 'loading' && <p>Loading...</p>}
             {status === 'succeeded' && <ArticleList articles={articles} />}

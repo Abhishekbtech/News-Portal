@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
+import dummyImage from '../Image/FakeNewsNet-0000003578-84fbf84d.jpg'
 
 const ArticleDetail = () => {
     const location = useLocation();
@@ -18,7 +19,7 @@ const ArticleDetail = () => {
     return (
         <div className="article-detail">
             <h1>{article.title}</h1>
-            <img src={article.urlToImage} alt={'No Image Found'} style={{ width: '100%', height: '100%' }} />
+            <img src={article.urlToImage || dummyImage} alt={'No Image Found'} style={{ width: '100%', height: '100%' }} />
             <p>Author Name: {article.author}</p>
             <p>{article.description}</p>
             <p>{article.content}</p>

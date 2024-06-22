@@ -13,7 +13,11 @@ const FavoriteButton = ({ article }) => {
     };
 
     return (
-        <button onClick={handleFavorite}>
+        <button onClick={handleFavorite}
+            style={{
+                backgroundColor: isFavorite ? 'red' : 'blue'
+            }}
+        >
             {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
         </button>
     );

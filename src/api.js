@@ -8,7 +8,6 @@ export const fetchArticles = async (category = 'general', page = 1) => {
             throw new Error(`Error fetching articles: ${response.statusText}`);
         }
         const data = await response.json();
-        console.log(data.articles)
         return data.articles;
     } catch (error) {
         console.error("Error fetching articles:", error);
